@@ -148,8 +148,7 @@ db.listings.find().limit(10).pretty()
 ```  
   
 Output:  
-
->[
+```
   {
     _id: ObjectId("6436c07924ed498386cbb842"),
     id: 2818,
@@ -190,8 +189,8 @@ Output:
     license: '0363 5F3A 5684 6750 D14D',
     instant_bookable: 'f',
     reviews_per_month: 1.9
-  },
-  {
+  ```
+  ```
     _id: ObjectId("6436c07924ed498386cbb843"),
     id: 311124,
     listing_url: 'https://www.airbnb.com/rooms/311124',
@@ -231,8 +230,8 @@ Output:
     license: '0363 59D8 7D30 6CFA DC81',
     instant_bookable: 'f',
     reviews_per_month: 0.66
-  },
-  {
+  ```
+  ```
     _id: ObjectId("6436c07924ed498386cbb844"),
     id: 319985,
     listing_url: 'https://www.airbnb.com/rooms/319985',
@@ -272,11 +271,10 @@ Output:
     license: '0363 7D88 E1E8 F521 9A10',
     instant_bookable: 'f',
     reviews_per_month: 3.73
-  }
->]  
+  ``` 
   
 **Insights**  
-Similar to the question above, this gives a person more options in choosing a listing without all the redudancy. For the assignment purposes, I have only show the first three results. This question takes what people may not be able to easily find while looking at the raw data a step further by giving more options with a "pretty" format applied that organizes Urls and text as a cleaner look.  
+Similar to the question above, this gives a person more options in choosing a listing without scanning the large text that displayed previously. For the assignment purposes, I have only displayed the first three results. This question takes what people may not be able to easily find while looking at the raw data a step further by giving more options with a "pretty" format applied that organizes the data in a list format so you are able to pinpoint an information about a listing quick.  
   
 
 3. Choose two hosts (by reffering to their `host_id` values) who are superhosts (available in the `host_is_superhost` field), and show all of the listings offered by both of the two hosts
