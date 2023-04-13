@@ -26,7 +26,7 @@ Save the raw data file of your choice into the `data` directory.
 In order to import this data into a MongoDB database, we must first upload it to our web server from which we will connect to the MongoDB sever.
 
 1. Use a file transfer program, such as [Cyberduck](https://cyberduck.io/), to transfer this compressed file to your account on the **i6**.cims.nyu.edu web server.
-1. Log into the **i6** server using `ssh`, and unzip this file with the command, `gunzip listings.csv.gz` - this will result in a file named `lsitings.csv` in the same directory.
+1. Log into the **i6** server using `ssh`, and unzip this file with the command, `gunzip listings.csv.gz` - this will result in a file named `listings.csv` in the same directory.
 
 ### Data scrubbing
 
@@ -121,7 +121,7 @@ connection = pymongo.MongoClient("your_db_host", 27017,
                                 username="your_db_username",
                                 password="your_db_password",
                                 authSource="your_db_name")
-collection = connection["your_db_name"]]["your_db_collection_name"]
+collection = connection["your_db_name"]["your_db_collection_name"]
 
 # the collection variable will be a reference to your collection
 docs = collection.find({}).limit(10) # get the first 10 documents
