@@ -51,8 +51,8 @@ db.listings.find().limit(2)
 ```  
   
 Output:  
-
->[
+```
+[
   {
     _id: ObjectId("6436c07924ed498386cbb842"),
     id: 2818,
@@ -135,10 +135,11 @@ Output:
     instant_bookable: 'f',
     reviews_per_month: 0.66
   }
->]  
+]
+```
    
 **Insights:**  
-What this output shows in comparison to someone jsut viewing the raw data is exactly just the necessary information for any two listings. Unecessary information is gone, therefore making it easier to find information that may be useful when searching for an Airbnb and not getting lost in the excess information. For example, a person is more likely to want to know the amount of beds in the listing as opposed to the longitude and latitude of the listing.  
+What this output shows in comparison to someone just viewing the raw data is exactly just the necessary information for any two listings. Unecessary information is gone, therefore making it easier to find information that may be useful when searching for an Airbnb and not getting lost in the excess information. For example, a person is more likely to want to know the amount of beds in the listing as opposed to the longitude and latitude of the listing.  
   
 
  2. Show exactly 10 documents in any order, but "prettyprint" in easier to read format, using the `pretty()` function.  
